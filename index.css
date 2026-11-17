@@ -9,89 +9,326 @@ body {
     font-family: Arial, sans-serif;
     background-color: #F7F1E8;
     color: #30231D;
-    padding: 25px;
     line-height: 1.7;
 }
 
-h1 {
+header {
+    background-color: #E8D8C3;
+    color: #65432F;
     text-align: center;
+    padding: 22px;
+}
+
+.logo h1 {
+    font-size: 46px;
+    letter-spacing: 3px;
     color: #65432F;
-    font-size: 40px;
-    margin: 20px;
 }
 
-h2 {
-    color: #65432F;
-    margin: 25px 0 10px;
-}
-
-h3 {
-    color: #A36F45;
-    margin-top: 20px;
-}
-
-p {
-    margin: 12px 0;
+.logo p {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #8B6B50;
 }
 
 nav {
-    background-color: #65432F;
-    padding: 18px;
+    background-color: #795238;
     text-align: center;
-    border-radius: 8px;
-    margin: 20px 0;
+    padding: 17px;
+    border-top: 1px solid #A77B59;
 }
 
 nav a {
-    color: white;
+    color: #FFF8EF;
     text-decoration: none;
-    margin: 0 12px;
+    margin: 0 18px;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    color: #E8C49A;
+    color: #E8D8C3;
 }
 
-hr {
-    border: none;
-    border-top: 1px solid #D6B995;
-    margin: 25px 0;
+.hero {
+    min-height: 550px;
+    background: linear-gradient(rgba(35, 24, 18, 0.55), rgba(35, 24, 18, 0.55)),
+    url("https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1800&q=90");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
 }
 
-img {
-    width: 600px;
-    max-width: 100%;
-    display: block;
-    margin: 20px auto;
+.hero-content {
+    max-width: 650px;
+    color: white;
+}
+
+.tagline {
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.hero-btn, .main-btn {
+    display: inline-block;
+    background-color: #B8875B;
+    color: white;
+    padding: 13px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-btn:hover, .main-btn:hover {
+    background-color: #65432F;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 75px 15px;
+}
+
+.about-image, .about-content {
+    width: 50%;
+}
+
+.about-image img {
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
     border-radius: 12px;
 }
 
-a {
-    color: #A36F45;
+.small-heading {
+    color: #B8875B;
+    font-size: 13px;
     font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
 }
 
-a:hover {
+.about-content h2 {
     color: #65432F;
+    font-size: 32px;
+    line-height: 1.3;
+    margin-bottom: 18px;
 }
 
-body > p:last-child {
+.text-link {
+    display: inline-block;
+    color: #65432F;
+    font-weight: bold;
+    margin-top: 18px;
+}
+
+.section-heading {
     text-align: center;
-    margin-top: 30px;
+    margin-bottom: 35px;
 }
 
-@media (max-width: 600px) {
-    body {
-        padding: 10px;
+.section-heading h2 {
+    color: #65432F;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.favorites {
+    text-align: center;
+    padding: 55px 10px;
+}
+
+.favorite-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.favorite-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+    transition: transform 0.3s;
+    text-align: left;
+}
+
+.favorite-card:hover {
+    transform: translateY(-7px);
+}
+
+.favorite-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    color: #65432F;
+    margin-bottom: 8px;
+}
+
+.gallery {
+    padding: 65px 10px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.04);
+}
+
+.reservation {
+    background: linear-gradient(rgba(35, 24, 18, 0.65), rgba(35, 24, 18, 0.65)),
+    url("https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1500&q=85");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 85px 20px;
+    border-radius: 12px;
+    margin: 50px 0;
+}
+
+.reservation-content {
+    max-width: 650px;
+    margin: auto;
+    color: white;
+}
+
+.reservation h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.reservation p {
+    margin-bottom: 25px;
+}
+
+footer {
+    background-color: #30231D;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+footer h2 {
+    margin-bottom: 8px;
+}
+
+.footer-links {
+    margin: 20px 0;
+}
+
+.footer-links a {
+    color: #E8D8C3;
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+footer hr {
+    border: 0;
+    border-top: 1px solid #65432F;
+    margin: 20px 0;
+}
+
+@media (max-width: 800px) {
+    .hero-content h2 {
+        font-size: 36px;
     }
 
-    h1 {
-        font-size: 30px;
+    .about {
+        flex-direction: column;
     }
 
+    .about-image, .about-content {
+        width: 100%;
+    }
+
+    .favorite-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
     nav a {
         display: inline-block;
         margin: 6px;
+    }
+
+    .hero {
+        min-height: 450px;
+        padding: 40px 7%;
+    }
+
+    .hero-content h2 {
+        font-size: 32px;
+    }
+
+    .favorite-container {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-container img {
+        height: 160px;
+    }
+
+    .reservation h2 {
+        font-size: 27px;
+    }
+
+    .footer-links a {
+        display: inline-block;
+        margin: 7px;
     }
 }
