@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,111 +9,142 @@
 </head>
 <body>
 
-    <h1>Reserve Your Table</h1>
-    <p>Your perfect coffee moment starts here.</p>
-
-    <hr>
+    <header>
+        <div class="logo">
+            <h1>Brew & Bloom</h1>
+            <p>CAFÉ & COFFEE HOUSE</p>
+        </div>
+    </header>
 
     <nav>
-        <a href="index.html">Home</a> |
-        <a href="menu.html">Menu</a> |
-        <a href="register.html">Reserve a Table</a> |
-        <a href="services.html">Services</a> |
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="register.html">Reserve a Table</a>
+        <a href="services.html">Services</a>
         <a href="contact.html">Gallery & Contact</a>
     </nav>
 
-    <hr>
+    <main>
 
-    <h2>Reservation Form</h2>
-    <p>Fill in your details to plan your visit.</p>
+        <section class="intro">
+            <p class="small-heading">YOUR COZY CORNER AWAITS</p>
 
-    <form>
+            <h2>Reserve Your Table</h2>
 
-        <label>Full Name:</label>
-        <input type="text" name="name" required minlength="3">
-        <br><br>
+            <p class="intro-text">
+                Whether it's a morning coffee or a relaxing evening,
+                we'd love to make your visit special.
+            </p>
+        </section>
 
-        <label>Email:</label>
-        <input type="email" name="email" required>
-        <br><br>
+        <hr>
 
-        <label>Password:</label>
-        <input type="password" name="password" required minlength="6">
-        <br><br>
+        <section class="reservation-section">
 
-        <label>Reservation Date:</label>
-        <input type="date" name="date" required>
-        <br><br>
+            <h2>Reservation Form</h2>
 
-        <label>Reservation Time:</label>
-        <input type="time" name="time" required>
-        <br><br>
+            <p class="form-description">
+                Fill in your details below to plan your perfect café experience.
+            </p>
 
-        <label>Number of Guests:</label>
-        <input type="number" name="guests" min="1" max="10" required>
-        <br><br>
+            <form>
 
-        <label>Favorite Coffee:</label>
-        <select name="coffee">
-            <option value="latte">Latte</option>
-            <option value="cappuccino">Cappuccino</option>
-            <option value="espresso">Espresso</option>
-            <option value="iced-coffee">Iced Coffee</option>
-        </select>
-        <br><br>
+                <label>Full Name:</label>
+                <input type="text" name="name" required minlength="3">
+                <br><br>
 
-        <label>Seating Preference:</label>
-        <input type="radio" name="seating" value="indoor" checked> Indoor
-        <input type="radio" name="seating" value="outdoor"> Outdoor
-        <br><br>
+                <label>Email:</label>
+                <input type="email" name="email" required>
+                <br><br>
 
-        <label>Special Requests:</label>
-        <br>
-        <textarea name="requests" rows="4" cols="35"
-                  placeholder="Write your requests here"></textarea>
-        <br><br>
+                <label>Password:</label>
+                <input type="password" name="password" required minlength="6">
+                <br><br>
 
-        <label>Choose a Theme Color:</label>
-        <input type="color" name="color">
-        <br><br>
+                <label>Reservation Date:</label>
+                <input type="date" name="date" required>
+                <br><br>
 
-        <label>How much do you enjoy coffee? (1-10)</label>
-        <input type="range" name="coffee-rating" min="1" max="10">
-        <br><br>
+                <label>Reservation Time:</label>
+                <input type="time" name="time" required>
+                <br><br>
 
-        <label>Website or Social Link:</label>
-        <input type="url" name="website">
-        <br><br>
+                <label>Number of Guests:</label>
+                <input type="number" name="guests" min="1" max="10" required>
+                <br><br>
 
-        <label>Upload a Reference Image:</label>
-        <input type="file" name="image">
-        <br><br>
+                <label>Favorite Coffee:</label>
+                <select name="coffee">
+                    <option value="latte">Latte</option>
+                    <option value="cappuccino">Cappuccino</option>
+                    <option value="espresso">Espresso</option>
+                    <option value="iced-coffee">Iced Coffee</option>
+                </select>
+                <br><br>
 
-        <label>Preferred Contact Date:</label>
-        <input type="date" name="contact-date" readonly>
-        <br><br>
+                <label>Seating Preference:</label>
+                <input type="radio" name="seating" value="indoor" checked> Indoor
+                <input type="radio" name="seating" value="outdoor"> Outdoor
+                <br><br>
 
-        <label>Reservation Code:</label>
-        <input type="text" value="BB-2026" disabled>
-        <br><br>
+                <label>Special Requests:</label>
+                <br>
+                <textarea name="requests" rows="4" cols="35"
+                    placeholder="Write your requests here"></textarea>
+                <br><br>
 
-        <label>
-            <input type="checkbox" name="terms" required>
-            I agree to the reservation terms.
-        </label>
-        <br><br>
+                <label>Choose a Theme Color:</label>
+                <input type="color" name="color">
+                <br><br>
 
-        <button type="submit">Submit Reservation</button>
-        <button type="reset">Clear Form</button>
+                <label>How much do you enjoy coffee? (1-10)</label>
+                <input type="range" name="coffee-rating" min="1" max="10">
+                <br><br>
 
-    </form>
+                <label>Website or Social Link:</label>
+                <input type="url" name="website">
+                <br><br>
 
-    <hr>
+                <label>Upload a Reference Image:</label>
+                <input type="file" name="image">
+                <br><br>
 
-    <p>Need help? Visit our <a href="contact.html">Contact Page</a>.</p>
-    <p><a href="index.html">Back to Home</a></p>
+                <label>Preferred Contact Date:</label>
+                <input type="date" name="contact-date" readonly>
+                <br><br>
 
-    <p>&copy; 2026 Brew & Bloom Café.</p>
+                <label>Reservation Code:</label>
+                <input type="text" value="BB-2026" disabled>
+                <br><br>
+
+                <label>
+                    <input type="checkbox" name="terms" required>
+                    I agree to the reservation terms.
+                </label>
+                <br><br>
+
+                <button type="submit">Submit Reservation</button>
+                <button type="reset">Clear Form</button>
+
+            </form>
+
+        </section>
+
+        <hr>
+
+        <section class="contact-info">
+            <p>Need help? Visit our <a href="contact.html">Contact Page</a>.</p>
+            <p><a href="index.html">Back to Home</a></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <h2>Brew & Bloom Café</h2>
+        <p>Good Coffee. Warm Moments.</p>
+        <hr>
+        <p>&copy; 2026 Brew & Bloom Café. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
