@@ -11,121 +11,133 @@
 
 <body>
 
-    <h1>Gallery & Contact</h1>
-
-    <p style="text-align:center;">
-        A place where every cup tells a story.
-    </p>
-
-    <hr>
+    <header>
+        <div class="logo">
+            <h1>Brew & Bloom</h1>
+            <p>CAFÉ & COFFEE HOUSE</p>
+        </div>
+    </header>
 
     <nav>
-        <a href="index.html">Home</a> |
-        <a href="menu.html">Menu</a> |
-        <a href="register.html">Reserve a Table</a> |
-        <a href="services.html">Services</a> |
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="register.html">Reserve a Table</a>
+        <a href="services.html">Services</a>
         <a href="contact.html">Gallery & Contact</a>
     </nav>
 
-    <hr>
+    <main>
 
-    <h2>Our Café Gallery</h2>
+        <section class="page-intro">
+            <p class="small-heading">OUR LITTLE WORLD</p>
+            <h2>Gallery & Contact</h2>
+            <p>A place where every cup tells a story.</p>
+        </section>
 
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=900&q=80"
-             alt="Beautiful cafe interior">
+        <section class="gallery-section">
 
-        <h3>Our Cozy Interior</h3>
-        <p>A comfortable place to relax and enjoy your coffee.</p>
-    </div>
+            <h2>Our Café Gallery</h2>
 
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80"
-             alt="Coffee being prepared">
+            <div class="gallery-container">
 
-        <h3>Fresh Coffee</h3>
-        <p>Every cup is prepared with love and attention.</p>
-    </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=900&q=80"
+                         alt="Beautiful cafe interior">
 
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=80"
-             alt="Fresh bakery items">
+                    <div class="card-content">
+                        <h3>Our Cozy Interior</h3>
+                        <p>A comfortable place to relax and enjoy your coffee.</p>
+                    </div>
+                </div>
 
-        <h3>Fresh Bakery</h3>
-        <p>Delicious bakery treats to make your day sweeter.</p>
-    </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80"
+                         alt="Coffee being prepared">
 
-    <hr>
+                    <div class="card-content">
+                        <h3>Fresh Coffee</h3>
+                        <p>Every cup is prepared with love and attention.</p>
+                    </div>
+                </div>
 
-    <h2>Contact Information</h2>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=80"
+                         alt="Fresh bakery items">
 
-    <div class="card">
+                    <div class="card-content">
+                        <h3>Fresh Bakery</h3>
+                        <p>Delicious bakery treats to make your day sweeter.</p>
+                    </div>
+                </div>
 
-        <h3>Visit Our Café</h3>
+            </div>
 
-        <p><strong>Name:</strong> Brew & Bloom Café</p>
+        </section>
 
-        <p><strong>Location:</strong> Lahore, Pakistan</p>
+        <section class="contact-info">
 
-        <p><strong>Opening Hours:</strong> 
-            Monday - Friday: 9 AM - 10 PM
-        </p>
+            <h2>Contact Information</h2>
 
-        <p><strong>Weekend:</strong>
-            Saturday - Sunday: 10 AM - 11 PM
-        </p>
+            <div class="info-card">
+                <h3>Visit Our Café</h3>
 
-    </div>
+                <p><strong>Name:</strong> Brew & Bloom Café</p>
 
-    <h2>Send Us a Message</h2>
+                <p><strong>Location:</strong> Lahore, Pakistan</p>
 
-    <p>Have a question or suggestion? We would love to hear from you.</p>
+                <p><strong>Opening Hours:</strong> Monday - Friday: 9 AM - 10 PM</p>
 
-    <form>
+                <p><strong>Weekend:</strong> Saturday - Sunday: 10 AM - 11 PM</p>
+            </div>
 
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name"
-               placeholder="Enter your name" required minlength="3">
+        </section>
 
-        <br><br>
+        <section class="message-section">
 
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email"
-               placeholder="Enter your email" required>
+            <div class="section-intro">
+                <p class="small-heading">WE WOULD LOVE TO HEAR FROM YOU</p>
+                <h2>Send Us a Message</h2>
+                <p>Have a question or suggestion? We would love to hear from you.</p>
+            </div>
 
-        <br><br>
+            <form>
 
-        <label for="subject">Subject:</label>
-        <select id="subject" name="subject">
-            <option value="general">General Inquiry</option>
-            <option value="feedback">Feedback</option>
-            <option value="reservation">Reservation Inquiry</option>
-            <option value="complaint">Complaint</option>
-        </select>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your name" required minlength="3">
 
-        <br><br>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email" required>
 
-        <label for="message">Your Message:</label>
-        <textarea id="message" name="message"
-                  rows="5" placeholder="Write your message here..."
-                  required></textarea>
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject">
+                    <option value="general">General Inquiry</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="reservation">Reservation Inquiry</option>
+                    <option value="complaint">Complaint</option>
+                </select>
 
-        <br><br>
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message"
+                          rows="5" placeholder="Write your message here..."
+                          required></textarea>
 
-        <button type="submit">Send Message</button>
-        <button type="reset">Clear</button>
+                <div class="form-buttons">
+                    <button type="submit">Send Message</button>
+                    <button type="reset" class="clear-btn">Clear</button>
+                </div>
 
-    </form>
+            </form>
 
-    <p>
-        <a href="register.html">Reserve a Table</a>
-    </p>
+        </section>
 
-    <p>
-        <a href="index.html">Back to Home</a>
-    </p>
+        <div class="page-links">
+            <a href="register.html">Reserve a Table</a>
+            <a href="index.html">Back to Home</a>
+        </div>
 
-    <hr>
+    </main>
 
     <footer>
         <p>&copy; 2026 Brew & Bloom Café. All rights reserved.</p>
