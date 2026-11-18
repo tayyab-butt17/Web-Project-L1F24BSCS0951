@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -8,104 +9,323 @@ body {
     font-family: Arial, sans-serif;
     background-color: #F7F1E8;
     color: #30231D;
-    padding: 25px;
     line-height: 1.7;
 }
 
-h1 {
+/* HEADER */
+
+header {
+    background-color: #E8D8C3;
+    color: #65432F;
     text-align: center;
-    color: #65432F;
-    font-size: 38px;
-    margin: 20px;
+    padding: 35px 20px;
 }
 
-h2 {
+.logo h1 {
+    font-size: 46px;
+    letter-spacing: 3px;
     color: #65432F;
-    margin: 30px 0 15px;
-    border-bottom: 2px solid #D6B995;
-    padding-bottom: 8px;
+    line-height: 1.2;
 }
 
-h3 {
-    color: #A36F45;
-    margin: 15px 0;
+.logo p {
+    font-size: 16px;
+    letter-spacing: 4px;
+    color: #8B6B50;
+    margin-top: 12px;
+    line-height: 1.5;
 }
+
+/* NAVIGATION */
 
 nav {
-    background-color: #65432F;
-    padding: 18px;
+    background-color: #795238;
     text-align: center;
-    border-radius: 8px;
-    margin: 20px 0;
+    padding: 17px;
+    border-top: 1px solid #A77B59;
 }
 
 nav a {
-    color: white;
+    color: #FFF8EF;
     text-decoration: none;
-    margin: 0 12px;
+    margin: 0 18px;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    color: #E8C49A;
+    color: #E8D8C3;
 }
+
+/* MAIN CONTENT */
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* INTRODUCTION */
+
+.intro {
+    text-align: center;
+    padding: 45px 15px;
+}
+
+.small-heading {
+    color: #B8875B;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.intro h2 {
+    color: #65432F;
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.intro-text {
+    color: #795F4D;
+    font-size: 17px;
+    max-width: 650px;
+    margin: auto;
+}
+
+/* SERVICES SECTION */
+
+.services-section {
+    padding: 25px 10px 55px;
+}
+
+.services-section > h2 {
+    color: #65432F;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* SERVICE CARDS */
 
 .card {
     background-color: white;
-    padding: 20px;
-    margin: 25px 0;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
 }
 
 .card img {
     width: 100%;
-    max-height: 300px;
+    height: 270px;
     object-fit: cover;
-    border-radius: 10px;
+    display: block;
 }
 
-ul {
-    margin: 15px 40px;
+.card-content {
+    padding: 22px;
 }
 
-li {
-    padding: 5px;
+.card h3 {
+    color: #65432F;
+    font-size: 22px;
+    margin-bottom: 10px;
 }
 
-a {
-    color: #A36F45;
-    font-weight: bold;
+.card p {
+    color: #795F4D;
+    font-size: 15px;
 }
 
-button {
-    background-color: #65432F;
+/* WHY CHOOSE US */
+
+.why-choose {
+    background-color: #E8D8C3;
+    padding: 35px;
+    border-radius: 12px;
+    margin: 20px 0 50px;
+}
+
+.why-choose h2 {
+    color: #65432F;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.why-choose ul {
+    max-width: 600px;
+    margin: auto;
+    list-style-type: square;
+}
+
+.why-choose li {
+    padding: 7px;
+    color: #65432F;
+}
+
+/* PLAN YOUR VISIT */
+
+.visit {
+    background: linear-gradient(
+        rgba(35, 24, 18, 0.75),
+        rgba(35, 24, 18, 0.75)
+    ),
+    url("https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1500&q=85");
+
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 75px 25px;
+    border-radius: 12px;
+    margin: 45px 0;
     color: white;
-    padding: 12px 22px;
-    border: none;
-    border-radius: 6px;
 }
+
+.visit .small-heading {
+    color: #E8D8C3;
+}
+
+.visit h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.visit p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+}
+
+/* RESERVATION BUTTON */
+
+.reserve-btn {
+    display: inline-block;
+    background-color: #B8875B;
+    color: white;
+    padding: 13px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.reserve-btn:hover {
+    background-color: #65432F;
+}
+
+/* FOOTER */
 
 footer {
-    text-align: center;
-    background-color: #65432F;
+    background-color: #30231D;
     color: white;
-    padding: 20px;
-    margin-top: 30px;
-    border-radius: 8px;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+footer h2 {
+    color: #E8D8C3;
+    margin-bottom: 8px;
+}
+
+.footer-links {
+    margin: 20px 0;
+}
+
+.footer-links a {
+    color: #E8D8C3;
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+footer hr {
+    border: 0;
+    border-top: 1px solid #65432F;
+    margin: 20px 0;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 800px) {
+
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .card img {
+        height: 240px;
+    }
+
+    .intro h2 {
+        font-size: 30px;
+    }
+
+    .visit h2 {
+        font-size: 28px;
+    }
 }
 
 @media (max-width: 600px) {
-    body {
-        padding: 10px;
+
+    .logo h1 {
+        font-size: 28px;
     }
 
-    h1 {
-        font-size: 30px;
+    .logo p {
+        font-size: 11px;
+        letter-spacing: 3px;
     }
 
     nav a {
         display: inline-block;
         margin: 6px;
+    }
+
+    .intro {
+        padding: 35px 10px;
+    }
+
+    .services-section {
+        padding: 15px 5px 35px;
+    }
+
+    .card img {
+        height: 190px;
+    }
+
+    .card-content {
+        padding: 18px;
+    }
+
+    .why-choose {
+        padding: 22px;
+    }
+
+    .visit {
+        padding: 50px 18px;
+    }
+
+    .footer-links a {
+        display: inline-block;
+        margin: 7px;
     }
 }
